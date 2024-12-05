@@ -490,6 +490,7 @@ class TradingApp:
         log_window = tk.Toplevel(self.root)
         log_window.title("Saved Signals")
         log_window.geometry("600x400")
+        log_window.iconbitmap("logo.ico")  # Use your custom icon here
 
         text_area = scrolledtext.ScrolledText(log_window, width=70, height=25, state="normal")
         for signal in signals:
